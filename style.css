@@ -8,17 +8,19 @@ body {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 50px 300px 300px 300px;
-    gap: 20px;
+    
 }
 
 #menu { 
+    color: rgb(82, 78, 78);
+    font-size: 13px;
     grid-column: 2/4;
     padding: 30px;
     display: flex;
     flex-direction: row;
     align-items: center; 
     justify-content: flex-start; 
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 #menu > p { 
@@ -26,8 +28,105 @@ body {
 }
 
 #lateral { 
-    display: grid;
+    background-color: rgba(211, 211, 211, 0.164);
+    color: rgb(82, 78, 78);
+    font-size: 13px;
     grid-row: 1 / 5;
     padding: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+#lateral > input { 
+    margin: 10px 0px 10px 0px;
+    width: 98%;
+    height: 30px;
+    border-radius: 8px;
     border: 1px solid black;
+}
+
+#lateral > button { 
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(7, 7, 189);
+}
+
+main { 
+    padding: 15px;
+    display: grid;
+    grid-area: 2 / 2 / 5 / 4;
+    align-content: start;
+}
+
+main > h2 { 
+    font-size: 18px;
+    font-weight: bold;
+    display: grid;
+}
+
+.total-revenue {
+    line-height: 1px;
+    display: grid;
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: rgba(211, 211, 211, 0.164); 
+    width: 95%;
+    padding: 5px 0px 0px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid lightgray ;
+    box-shadow: 0px 5px 5px lightgray;
+}
+
+.total-revenue > p { 
+    color: rgb(77, 63, 63);
+}
+
+.total-revenue > p#principal { 
+    font-weight: bold;
+}
+
+#t2 {
+    line-height: 1px;
+    display: grid;
+    grid-area: 4 / 1 / 5 / 1;
+}
+
+#new-customers {
+    line-height: 1px;    
+    display: grid;
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: rgba(211, 211, 211, 0.164); 
+    width: 95%;
+    padding: 5px 0px 0px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid lightgray ;
+    box-shadow: 0px 5px 5px lightgray;
+}
+
+#new-customers > p { 
+    color: rgb(82, 78, 78);
+}
+
+#new-customers > p#principal { 
+    font-weight: bold;
+}
+
+#chart-title { 
+    line-height: 1px;
+    margin-left: 40px;
+    padding: 5px 0px 0px 20px;
+    display: grid;
+    grid-area: 2 / 2 / 5 / 4;
+    align-content: flex-start;
+    background-color: rgba(211, 211, 211, 0.164); 
+    border-radius: 8px;
+    border: 1px solid lightgray ;
+    box-shadow: 0px 5px 5px lightgray;
 }
